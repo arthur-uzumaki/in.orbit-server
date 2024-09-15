@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:3333
+
+POST {{baseUrl}}/goals 
+Content-Type: application/json
+
+{
+  "title": "Estudar Reactjs",
+  "desiredWeeklyFrequency": 5
+}
+
+###
+
+GET {{baseUrl}}/pending-goals               
+
+###
+
+POST {{baseUrl}}/completions
+Content-Type: application/json
+
+{
+  "goalId": "wueeatwxspn1f512wtnpqd5u"
+}
+
+###
+
+GET {{baseUrl}}/summary
